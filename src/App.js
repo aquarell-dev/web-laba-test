@@ -15,11 +15,6 @@ function App() {
     <div className="App">
       <div className="centered">
         <div className="card">
-          <div id="trapezoid">
-            <div className="number">
-              <p className="centered">00501</p>
-            </div>
-          </div>
           <div className="content">
             <div className="heading">
               <img
@@ -32,28 +27,25 @@ function App() {
                 <p style={{ color: '#b5605c', fontSize: "24px" }}>Semper in motu</p>
               </div>
             </div>
-            <div className="info">
-              <div className="key_phrase">Поступай к нам</div>
-              <div className="social_media">
-                {socialMedia.map((soc_media, idx) => (
-                  <div
-                    key={idx}
-                    className="social_media_item"
-                  >
-                    {soc_media}
-                  </div>
-                ))}
-              </div>
-            </div>
+            {/*<div className="info">*/}
+            {/*  <div className="key_phrase">Поступай к нам</div>*/}
+            {/*  <div className="social_media">*/}
+            {/*    {socialMedia.map((soc_media, idx) => (*/}
+            {/*      <div*/}
+            {/*        key={idx}*/}
+            {/*        className="social_media_item"*/}
+            {/*      >*/}
+            {/*        {soc_media}*/}
+            {/*      </div>*/}
+            {/*    ))}*/}
+            {/*  </div>*/}
+            {/*</div>*/}
           </div>
-          <div className="contacts__wrapper">
-            <div className="contacts">
-              <p>8 800 555 35-35</p>
-              <p>vsu.ru</p>
-            </div>
+          <div className="trapezia" />
+          <div className="contacts">
+            <div className="triangle" />
           </div>
         </div>
-
       </div>
     </div>
   );
