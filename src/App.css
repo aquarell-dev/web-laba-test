@@ -6,18 +6,22 @@
 }
 
 .card {
-  width: 400px;
-  height: 250px;
+  position: relative;
+
+  width: 700px;
+  height: 500px;
 
   border: 1px solid #2f2929;
   border-radius: 10px;
 
-  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .logo {
-  width: 48px;
-  height: 60px;
+  width: 135px;
+  height: 150px;
   margin-right: 1rem;
 }
 
@@ -28,36 +32,41 @@
   flex-direction: column;
   justify-content: space-between;
 
-  padding-top: 10px;
+  height: 64%;
 
-  height: 140px;
+  padding: 10px 15px;
 }
 
 .heading {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .info {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-
   display: flex;
-  justify-content: space-between;
+  align-items: flex-end;
   flex-direction: column;
+}
 
-  height: 90px;
+.key_phrase {
+  font-size: 46px;
+  font-weight: 500;
+  color: #4f61b7;
 }
 
 .social_media {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-top: 40px;
 }
 
 .social_media_item {
-  margin: 0 2px;
+  margin: 0 8px;
+}
+
+.social_media_item:hover {
+  cursor: pointer;
 }
 
 .title {
@@ -68,25 +77,31 @@
 }
 
 .contacts__wrapper {
-  position: absolute;
+  position: relative;
 
-  bottom: 0;
-  left: 0;
-
-  height: 100px;
+  height: 36%;
   width: 100%;
 
-  background-color: #201b21;
+  background-color: #4f61b7;
 
   border-radius: 0 0 10px 10px;
 
   z-index: 10;
 }
 
+.s {
+  width: 0;
+  height: 0;
+
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 100px solid red;
+}
+
 .contacts {
   color: white;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 30px;
 
   position: absolute;
   left: 0;
@@ -96,11 +111,11 @@
   display: flex;
   justify-content: space-between;
 
-  padding: 10px 15px;
+  padding: 12px 15px;
 }
 
 #trapezoid {
-  border-bottom: 60px solid #e63c23;
+  border-bottom: 60px solid #fccd05;
   border-right: 50px solid transparent;
 
   height: 0;
@@ -109,9 +124,29 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 70px;
+  bottom: 143px;
 
   z-index: 15;
+}
+
+#trapezoid:after {
+  position: absolute;
+
+  content: '';
+
+  right: -74.5px;
+  bottom: -60px;
+
+  width: 0;
+  height: 0;
+
+  border-left: 25.5px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 30px solid #c09b01;
+
+  z-index: -1; /* not working somehow */
+
+  clear: both;
 }
 
 .number {
@@ -123,10 +158,5 @@
   color: white;
 
   font-size: 22px;
-  font-weight: 500;
-}
-
-.key_phrase {
-  font-size: 30px;
   font-weight: 500;
 }
