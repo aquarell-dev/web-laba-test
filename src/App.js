@@ -23,27 +23,35 @@ function App() {
                 className="logo"
               />
               <div className="title">
-                <p style={{ fontSize: "55px", fontWeight: 500, color: '#4f61b7' }}>ВГУ</p>
-                <p style={{ color: '#b5605c', fontSize: "24px" }}>Semper in motu</p>
+                <p style={{ fontSize: '55px', fontWeight: 500, color: '#4f61b7' }}>ВГУ</p>
+                <p style={{ color: '#b5605c', fontSize: '24px' }}>Semper in motu</p>
               </div>
             </div>
-            {/*<div className="info">*/}
-            {/*  <div className="key_phrase">Поступай к нам</div>*/}
-            {/*  <div className="social_media">*/}
-            {/*    {socialMedia.map((soc_media, idx) => (*/}
-            {/*      <div*/}
-            {/*        key={idx}*/}
-            {/*        className="social_media_item"*/}
-            {/*      >*/}
-            {/*        {soc_media}*/}
-            {/*      </div>*/}
-            {/*    ))}*/}
-            {/*  </div>*/}
-            {/*</div>*/}
+            <div className="info">
+              <div className="key_phrase">Поступай к нам</div>
+              <div className="social_media">
+                {socialMedia.map((soc_media, idx) => (
+                  <div
+                    key={idx}
+                    className="social_media_item"
+                  >
+                    {soc_media}
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
-          <div className="trapezia" />
+          <div className="trapezia">
+            <div className="some_info">
+              001501
+            </div>
+          </div>
+          <div className="wrapper">
+            <div className="triangle"/>
+          </div>
           <div className="contacts">
-            <div className="triangle" />
+            <p style={{ marginLeft: '15px' }}>8 800 555 35-35</p>
+            <p style={{ marginRight: '15px' }}>vsu.ru</p>
           </div>
         </div>
       </div>
